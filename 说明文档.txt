@@ -1,1 +1,69 @@
 20180408开始系统的学习Java
+
+配置Java环境:
+	https://blog.csdn.net/best3c/article/details/72848540
+	
+20180408:
+	学习字符串:
+		String 类：
+			创建字符串:
+				String(char a[]);
+				String(char a[], int offset, int length);
+				String str1, str2;
+				str1 = "hello";
+				str2 = "world";
+			字符串的连接:
+				+ 连接
+			获取字符串的信息:
+				长度: 
+					str.length()
+				字符串查找: indexOf() 和 lastIndexOf()
+					str.indexOf(String s)返回str中首次出现s的位置
+					str.lastIndexOf(String s) 返回最后一次出现s的位置
+				获得指定索引位置的字符:
+					str.charAt(int index) 返回char类型数据
+				获取子字符串: substring()
+					str.substring(int beginIndex) 返回从beginIndex开始到结尾的子串
+					str.substring(int beginIndex, int endIndex) 返回从beginIndex开始到endIndex结尾的子串
+				去除空格:
+					str.trim() 去除首尾空格
+				字符串替换:
+					str.replace(char oldChar, char newChar)
+				判断字符串的开头与结尾:
+					str.startsWith(String prefix)
+					str.ednsWith(String suffix)
+					这两个方法返回的都是boolean值
+				判断字符串是否相等:
+					1. boolean b = (String str1 == String str2)
+						判断字符串对象是否相等
+					2. boolean b = str.equals(String otherstr)
+						判断字符串内容是否相等
+					3. boolean b = str.equalsIgnoreCase(String otherstr)
+						判断字符串忽略大小写是否相等
+				比较两个字符串的大小:
+					str.compareTo(String otherstr) return -1，0， 1
+				字母大小写转换:
+					toLowerCase()
+					toUpperCase()
+				字符串分割:
+					String[] result = str.split(String sign, int limit)
+				格式化字符串:
+					str.format(String format, Object...args)
+					日期格式化
+					时间格式化
+					常规类型格式化
+				字符串生成器:
+					可变字符序列 StringBuilder 类: 
+						append(content) content表示要追加到字符串生成器中的内容
+						insert(int offset, arg) 表示在offset位置加入arg
+						delete(int start, int end) 表示删除指定位置指定长度的字符串
+
+
+
+
+
+
+
+
+
+
