@@ -18,5 +18,17 @@ public class StringClassLearn {
 
 
 		System.out.println(year + month + day + "\n" + time + "\n" + date);
+
+		StringBuilder builder = new StringBuilder("helloworld");
+		System.out.println(builder.toString());
+
+		builder.append(year);
+		System.out.println(builder.toString());
+
+		builder.insert(5, " ");
+		builder.insert(11, " ");
+		System.out.println(builder.toString());
+		System.out.println(builder.length());
+
 	}
 }
