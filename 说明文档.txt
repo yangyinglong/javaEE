@@ -180,6 +180,32 @@
 
 	import:
 
+20180512:
+	容器的学习:
+		容器继承图:
+			<<interface>>Collection
+				--<<interface>>Set
+					--HashSet
+				--<<interface>>List
+					--LinkedList
+					--ArrayList
+			<<interface>>Map
+				--HashMap
+		Collection接口中定义的方法:
+			int size(); 多少长度
+			boolean isEmpty(); 是否为空
+			void clear(); 清空
+			boolean contains(Object element); 是否有某个对象， equals
+			boolean add(Object element); 添加
+			boolean remove(Object element); 去除
+			Iterator iterator();
+			boolean containsAll(Collection c); 是否包括另一个集合中所所有的元素
+			boolean addAll(Collection c);  添加另一个集合中所有的元素
+			boolean romoveAll(Collection c);  去除另一个集合中所有的元素
+			boolean retainALl(Collection c);  求两个集合的交集
+			Object toArray(); 把里面的对象转换成数组
+
+
 
 
 
